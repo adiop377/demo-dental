@@ -566,6 +566,17 @@ nav {
     .doctor-flex { gap: 50px; }
 }
 
+footer a {
+    color: white !important;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--accent) !important;
+    opacity: 1 !important;
+}
+
 /* Contact Icon Buttons */
 .contact-icon-btn {
     width: 55px;
