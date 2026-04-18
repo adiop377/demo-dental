@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileCraft Prestige | Advanced Dental Care India</title>
+    <meta name="description" content="Experience the pinnacle of dental care at SmileCraft Prestige. Advanced treatments with world-class hospitality in India.">
+    
+    <!-- Scripts & Fonts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div> <!-- Adding a third blob for more coverage -->
+    </div>
+
+    <!-- Sticky Navbar -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i data-lucide="sparkles"></i>
+                    SmileCraft<span>Prestige</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">The Clinic</a>
+                    <a href="#doctor">Our Specialist</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="#booking" class="btn-premium btn-p hide-mobile">Reserve Now</a>
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Cinematic Hero -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <div class="badge">Estd. 2009 • India</div>
+                        <h1>The Art of <span>Perfect</span> Smiles</h1>
+                        <p>Where advanced dental science meets aesthetic perfection. Experience India's most trusted premium dental destination.</p>
+                        <div class="hero-btns">
+                            <a href="#booking" class="btn-premium btn-p">Book a Consultation</a>
+                            <a href="tel:+910000000000" style="margin-left: 20px; font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 8px;">
+                                <i data-lucide="phone"></i> +91 00000 00000
+                            </a>
+                        </div>
+                        <div class="hero-stats-row">
+                            <div class="stat-card">
+                                <i data-lucide="star"></i>
+                                <span><strong>99.9%</strong> Patient Satisfaction</span>
+                            </div>
+                            <div class="stat-card">
+                                <i data-lucide="award"></i>
+                                <span><strong>12+</strong> Global Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img-wrapper">
+                        <img src="assets/hero.png" alt="Premium Consultation" class="hero-img-main">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Services -->
+        <section id="services" class="section-padding" style="padding: 150px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Our Services</div>
+                    <h2>World Class Treatments</h2>
+                </div>
+                <div class="services-container">
+                    <div class="service-card">
+                        <div class="service-img-v"><img src="assets/service1.png" alt="Cosmetic Dentistry"></div>
+                        <div class="s-content">
+                            <div class="s-icon"><i data-lucide="gem"></i></div>
+                            <h3>Cosmetic Dentistry</h3>
+                            <p>Designing perfect smiles using digital-guided smile design and premium veneers.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-v"><img src="assets/service2.png" alt="Digital Implants"></div>
+                        <div class="s-content">
+                            <div class="s-icon"><i data-lucide="shield-check"></i></div>
+                            <h3>Digital Implants</h3>
+                            <p>Minimalist surgical approaches for high-precision tooth replacement with lifetime warranty.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-v"><img src="assets/service3.png" alt="Invisible Aligners"></div>
+                        <div class="s-content">
+                            <div class="s-icon"><i data-lucide="align-justify"></i></div>
+                            <h3>Invisible Aligners</h3>
+                            <p>Straighten your teeth with world-renowned Invisalign technology, virtually invisible.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-v"><img src="assets/service4.png" alt="Laser Therapy"></div>
+                        <div class="s-content">
+                            <div class="s-icon"><i data-lucide="zap"></i></div>
+                            <h3>Laser Therapy</h3>
+                            <p>Painless treatments for gum diseases and faster healing using advanced laser tech.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-v"><img src="assets/service5.png" alt="Pediatric Care"></div>
+                        <div class="s-content">
+                            <div class="s-icon"><i data-lucide="heart"></i></div>
+                            <h3>Pediatric Care</h3>
+                            <p>Specialized, gentle care for children in a vibrant, fear-free environment.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-v"><img src="assets/service6.png" alt="Micro-Root Canal"></div>
+                        <div class="s-content">
+                            <div class="s-icon"><i data-lucide="microscope"></i></div>
+                            <h3>Micro-Root Canal</h3>
+                            <p>High-precision root canal procedures under surgical microscopes for 100% success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Clinic Excellence -->
+        <section id="about" class="section-padding" style="background: var(--white);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">The Clinic</div>
+                    <h2>Our World-Class Facility</h2>
+                </div>
+                <div class="clinic-showcase">
+                    <div class="clinic-main-img reveal">
+                        <img src="assets/clinic.png" alt="SmileCraft Prestige Interior">
+                        <div class="img-overlay-text">
+                            <h3>Designed for Comfort, Engineered for Excellence</h3>
+                            <p>Every corner of our clinic is meticulously designed to provide a calming, spa-like atmosphere while housing India's most advanced dental technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor Profile Prestige -->
+        <section id="doctor" class="doctor-section">
+            <div class="container">
+                <div class="doctor-flex">
+                    <div class="dr-img-container">
+                        <img src="assets/doctor.png" alt="Dr. Vikram Sharma" width="100%">
+                    </div>
+                    <div class="dr-info">
+                        <div class="badge" style="background: rgba(255,255,255,0.1); color: white;">Global Recognition</div>
+                        <h2>Dr. Vikram Sharma</h2>
+                        <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.8;">MDS Prosthodontics & Implantology (Gold Medalist). Dr. Vikram is one of India's leading authorities on cosmetic rehabilitation with over 15 years of surgical excellence.</p>
+                        <div class="dr-stats">
+                            <div class="dr-stat-item">
+                                <h4>15+</h4>
+                                <p>Years Exp</p>
+                            </div>
+                            <div class="dr-stat-item">
+                                <h4>10k+</h4>
+                                <p>Smiles Restored</p>
+                            </div>
+                            <div class="dr-stat-item">
+                                <h4>05+</h4>
+                                <p>Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ultra Premium Booking -->
+        <section id="booking" class="section-padding">
+            <div class="container">
+                <div class="booking-card">
+                    <div class="booking-details" style="background: var(--bg-soft); border-radius: 30px; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                        <h4 style="font-size: 1.5rem; margin-bottom: 20px;">Why SmileCraft?</h4>
+                        <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+                            <i data-lucide="shield" style="color: var(--accent);"></i>
+                            <p><strong>Zero Wait Time:</strong> We respect your schedule with strict appointment adherence.</p>
+                        </div>
+                        <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+                            <i data-lucide="sparkles" style="color: var(--accent);"></i>
+                            <p><strong>5-Star Hospitality:</strong> Luxury lounge and personalized care assistant.</p>
+                        </div>
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <i data-lucide="crosshair" style="color: var(--accent);"></i>
+                            <p><strong>Hi-Tech Precision:</strong> Japan & German standard equipment for optimal results.</p>
+                        </div>
+                        <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(0,0,0,0.05);">
+                            <h5 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); margin-bottom: 20px;">Connect Instantly</h5>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="https://wa.me/910000000000" class="contact-icon-btn whatsapp" title="WhatsApp">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" class="lucide lucide-whatsapp"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                </a>
+                                <a href="https://instagram.com" class="contact-icon-btn instagram" title="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                </a>
+                                <a href="mailto:care@smilecraft.in" class="contact-icon-btn gmail" title="Email"><i data-lucide="mail"></i></a>
+                                <a href="tel:+910000000000" class="contact-icon-btn phone" title="Call Now"><i data-lucide="phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-form-wrap">
+                        <div class="badge">Confidential</div>
+                        <h2>Schedule Your Visit</h2>
+                        <p style="margin-bottom: 30px;">Your time is valuable. Reserve your slot and our patient experience manager will coordinate your arrival.</p>
+                        <form class="form-premium form-group" id="premiumForm">
+                            <input type="text" placeholder="Your Full Name" required>
+                            <input type="tel" placeholder="Mobile Number" required>
+                            <select required>
+                                <option value="" disabled selected>Select Treatment</option>
+                                <option>Cosmetic Consultation</option>
+                                <option>Dental Implants</option>
+                                <option>General Checkup</option>
+                            </select>
+                            <button type="submit" class="btn-premium btn-p" style="width: 100%;">Confirm Slot</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: rgba(15, 23, 42, 0.98); backdrop-filter: blur(10px); color: white; padding: 60px 0 30px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px; margin-bottom: 40px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <div class="logo" style="color: white; margin-bottom: 20px;">
+                        <i data-lucide="sparkles"></i> SmileCraft<span>Prestige</span>
+                    </div>
+                    <p style="opacity: 0.7; font-size: 0.9rem; max-width: 300px;">Elevating dental standards in India with world-class hospitality and precision.</p>
+                </div>
+                <div style="display: flex; gap: 60px; flex-wrap: wrap;">
+                    <div>
+                        <h4 style="margin-bottom: 15px; font-size: 1rem;">Experience</h4>
+                        <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+                            <li><a href="#services">Treatments</a></li>
+                            <li><a href="#about">The Clinic</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 15px; font-size: 1rem;">Connect</h4>
+                        <div style="display: flex; gap: 15px;">
+                            <a href="#" style="opacity: 0.7;"><i data-lucide="instagram" style="width: 18px;"></i></a>
+                            <a href="#" style="opacity: 0.7;"><i data-lucide="linkedin" style="width: 18px;"></i></a>
+                            <a href="#" style="opacity: 0.7;"><i data-lucide="twitter" style="width: 18px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; opacity: 0.5; font-size: 0.8rem; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2026 SmileCraft Prestige. Excellence by Design.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/910000000000" style="position: fixed; bottom: 40px; right: 40px; width: 70px; height: 70px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 20px 40px rgba(0,0,0,0.2); z-index: 1001;" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" style="width: 35px; height: 35px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
